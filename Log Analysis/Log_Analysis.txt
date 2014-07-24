@@ -1,0 +1,19 @@
+1) 	Messages - Looks like it is all of the system messages of where incoming requests are coming from and where they are going.
+	Secure - Looks like security log of authentication failures.
+	Access_Log - When files on the server are accessed, where they originate from, and what client accessed them.
+	Error_Log - PHP error logs with notices and fatal errors.
+	
+2)	Messages: December 8 - December 10.
+	Secure: December 8 - December 10.
+	Access_Log: Weekly logs dating from November 10, 2013 through December 10, 2013.
+	Error_Log: Weekly error logs dating from November 10, 2013 through December 10, 2013.
+	
+3)	I found 62 unique users based on attempts to log in to the server.
+
+4)	The secure log file is much larger than the others. What appears out of the ordinary is that it looks like a break-in attempt that eventually was successful.
+
+5)	The most common error in the error logs is File does not exist.
+
+6)	As mentioned in 4), the break-in attempt which ran over the course of three days.
+
+7)	The secure file contained a detailed list of every login attempt to the server as well as why the login failed. There were several points where the log indicated that it was a possible break-in attempt. Ultimately, the attacker managed to successfully login as root. The error logs contained any PHP errors as they occurred. The messages log file contained server connection data including what connection type it was, the source IP, destination IP, what protocol the request was, the time to live, and other connection info that I do not know what they are. The access logs contained details about which files were accessed and by what client, when they were accessed, and from where they were accessed.
