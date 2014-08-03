@@ -1,0 +1,20 @@
+I. Installed patches(as well as a few installed packages) documented within 'installs_and_patches.txt'.
+	List retrieved by copying and pasting the contents of 'history.log', which is contained within the '/var/log/apt' directory.
+
+
+II. Installed applications documented within 'installed_packages.txt' file.
+	List retrieved using the commands - 
+				$ cd ~
+				$ touch installed_packages.txt
+				$ dpkg --get-selections | grep -v deinstall > ~/installed_packages.txt
+
+
+	'installed1.png' and 'installed2.png' contain a list of installed apps using the commands -
+				$ cd /var/cache/apt/archives
+				$ ls
+
+	'Railo_installed.png' verifies successful Railo install.
+
+	'Python_installed.png' verifies successful Python2 and Python3 install using the command '/usr/bin$ ls'.
+
+	'VMPlayer_installed.png' verifies successful VM Player install using the command '/usr/bin$ ls'.
